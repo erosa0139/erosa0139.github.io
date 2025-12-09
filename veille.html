@@ -32,51 +32,72 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">ESTEBAN ROSA</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="formation.html">École</a>
-            <a href="pro.html">Expériences Pro</a>
-            <a href="veille.html" class="active">Veille Techno</a>
-            <a href="passions.html">Passions</a>
-        </div>
-    </nav>
-
-    <section>
+  <section>
         <div class="veille-header">
             <h1>Veille Technologique</h1>
-            <p style="color: var(--text-muted); margin-bottom: 20px;">Surveillance des évolutions pour anticiper les menaces.</p>
-            <span class="topic">Sujet : L'IA et la Cybersécurité</span>
+            <p style="color: var(--text-muted); margin-bottom: 20px;">
+                Surveillance active des évolutions systèmes et des normes de sécurité.
+            </p>
+            <span class="topic">Sujet : Sécurisation des infrastructures & Windows Server 2025</span>
         </div>
 
-        <h2 style="margin-bottom: 20px; border-left: 5px solid var(--accent); padding-left: 15px;">Mes Outils</h2>
+        <h2 style="margin-bottom: 20px; border-left: 5px solid var(--accent); padding-left: 15px;">Mes Outils de Veille</h2>
         <div class="tools-grid">
-            <div class="tool-card"><span class="tool-icon">📡</span><h3>Feedly</h3><p>Flux RSS centralisés</p></div>
-            <div class="tool-card"><span class="tool-icon">🔔</span><h3>Google Alerts</h3><p>Alertes mots-clés</p></div>
-            <div class="tool-card"><span class="tool-icon">🛡️</span><h3>ANSSI</h3><p>Bulletins officiels</p></div>
+            <div class="tool-card">
+                <span class="tool-icon">📡</span>
+                <h3>Feedly</h3>
+                <p style="font-size: 0.9rem; color: #94a3b8;">Centralisation des flux RSS (IT Connect, LeMagIT, ANSSI).</p>
+            </div>
+            <div class="tool-card">
+                <span class="tool-icon">🔔</span>
+                <h3>Google Alerts</h3>
+                <p style="font-size: 0.9rem; color: #94a3b8;">Mots-clés : "Windows Server 2025", "Faille Zero Day", "NIS2".</p>
+            </div>
+            <div class="tool-card">
+                <span class="tool-icon">🎧</span>
+                <h3>Podcasts Tech</h3>
+                <p style="font-size: 0.9rem; color: #94a3b8;">Écoute hebdomadaire (NoLimitSecu, Underscore_).</p>
+            </div>
         </div>
 
-        <h2 style="margin-bottom: 20px; border-left: 5px solid var(--accent); padding-left: 15px;">Articles Analysés</h2>
+        <h2 style="margin-bottom: 20px; border-left: 5px solid var(--accent); padding-left: 15px;">Dernières Analyses</h2>
 
         <div class="article-card">
-            <div style="color: #94a3b8; font-size: 0.9rem;">25 Octobre 2025 | Source : ANSSI</div>
-            <h3 class="article-title">Recrudescence des Ransomwares</h3>
-            <p style="margin-bottom: 15px;">Analyse de l'augmentation des attaques ciblant les PME.</p>
-            <a href="#" class="source-link">Lire l'analyse →</a>
+            <div style="color: #94a3b8; font-size: 0.9rem;">15 Novembre 2025 | Source : IT-Connect / Microsoft</div>
+            <h3 class="article-title">Windows Server 2025 : La fin des redémarrages ?</h3>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Sujet :</strong> L'arrivée de la fonctionnalité "Hotpatching" (correctifs à chaud) pour tous, et la modernisation de l'Active Directory.
+            </p>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Mon analyse :</strong> Cette fonctionnalité change la gestion de parc critique. Elle permet d'appliquer des correctifs de sécurité sans rebooter le serveur, ce qui garantit une haute disponibilité. En entreprise, cela réduit drastiquement les interventions de nuit pour les mises à jour.
+            </p>
+            <a href="https://learn.microsoft.com/fr-fr/windows-server/get-started/hotpatch" target="_blank" class="source-link">Lire la documentation officielle →</a>
         </div>
         
         <div class="article-card">
-            <div style="color: #94a3b8; font-size: 0.9rem;">10 Septembre 2025 | Source : LeMagIT</div>
-            <h3 class="article-title">Windows Server 2025</h3>
-            <p style="margin-bottom: 15px;">Abandon progressif du protocole NTLM pour plus de sécurité.</p>
-            <a href="#" class="source-link">Lire l'analyse →</a>
+            <div style="color: #94a3b8; font-size: 0.9rem;">03 Octobre 2025 | Source : ANSSI</div>
+            <h3 class="article-title">Directive NIS 2 : Nouvelles obligations pour les PME</h3>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Sujet :</strong> Transposition de la directive européenne imposant des mesures de sécurité strictes à de nouveaux secteurs (santé, gestion de services TIC).
+            </p>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Impact métier :</strong> En tant que futur administrateur, cela m'oblige à mettre en place une politique de mots de passe renforcée (MFA) et une procédure de signalement d'incidents, car la responsabilité de l'entreprise est désormais engagée pénalement.
+            </p>
+            <a href="https://www.ssi.gouv.fr/directive-nis-2/" target="_blank" class="source-link">Lire le rapport ANSSI →</a>
+        </div>
+
+        <div class="article-card">
+            <div style="color: #94a3b8; font-size: 0.9rem;">20 Septembre 2025 | Source : Cert-FR</div>
+            <h3 class="article-title">Durcissement de l'Active Directory face aux attaques</h3>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Sujet :</strong> Les nouvelles recommandations pour sécuriser Kerberos et abandonner NTLMv2.
+            </p>
+            <p style="margin-bottom: 15px; color: #cbd5e1;">
+                <strong>Mon analyse :</strong> L'AD reste la cible n°1 des ransomwares. J'ai retenu qu'il faut impérativement désactiver les protocoles obsolètes et surveiller les comptes à privilèges (Tiering Model), une pratique que j'essaie d'appliquer dans mes labs.
+            </p>
+            <a href="https://www.cert.ssi.gouv.fr/" target="_blank" class="source-link">Voir le bulletin CERT-FR →</a>
         </div>
 
     </section>
-    
-    <footer style="text-align: center; padding: 2rem; border-top: 1px solid #334155; color: var(--text-muted);">
-        <p>© 2025 Esteban ROSA</p>
-    </footer>
 </body>
 </html>
